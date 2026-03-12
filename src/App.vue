@@ -7,6 +7,7 @@ import Steps from './components/Steps.vue'
 import CTA from './components/CTA.vue'
 import Footer from './components/Footer.vue'
 import Testimonials from './components/Testimonials.vue'
+import FloatingWa from './components/FloatingWa.vue'
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import Testimonials from './components/Testimonials.vue'
     <Testimonials />
     <CTA />
     <Footer />
+    <FloatingWa />
   </div>
 </template>
 

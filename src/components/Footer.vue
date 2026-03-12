@@ -39,7 +39,7 @@ const links = {
               <Instagram :size="16" class="text-slate-400 group-hover:text-blue-600" />
               <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 group-hover:text-slate-950">Instagram</span>
             </a>
-            <a href="#" class="group flex items-center gap-2 px-4 py-2 bg-slate-50 border border-slate-100 rounded-xl hover:border-blue-200 transition-all">
+            <a href="https://wa.me/6287736763720" class="group flex items-center gap-2 px-4 py-2 bg-slate-50 border border-slate-100 rounded-xl hover:border-blue-200 transition-all">
               <MessageCircle :size="16" class="text-slate-400 group-hover:text-blue-600" />
               <span class="text-[10px] font-black uppercase tracking-widest text-slate-500 group-hover:text-slate-950">WhatsApp</span>
             </a>

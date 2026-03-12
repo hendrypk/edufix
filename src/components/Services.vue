@@ -98,7 +98,7 @@ const services = [
         <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]">
           Semua servis sudah termasuk <span class="text-slate-900 italic underline decoration-blue-600">Garansi 30 Hari.</span>
         </p>
-        <a href="https://wa.me/..." class="text-blue-600 font-black text-[10px] uppercase tracking-widest hover:underline">
+        <a href="https://wa.me/6287736763720" class="text-blue-600 font-black text-[10px] uppercase tracking-widest hover:underline">
           Butuh Layanan Lain? Tanya Sini →
         </a>
       </div>
