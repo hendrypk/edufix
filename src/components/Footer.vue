@@ -1,5 +1,6 @@
 <script setup>
 import { Laptop, Instagram, MessageCircle, MapPin, ArrowUpRight } from 'lucide-vue-next'
+import AppLogo from './AppLogo.vue';
 
 const links = {
   layanan: [
@@ -23,14 +24,7 @@ const links = {
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
         
         <div class="md:col-span-5 flex flex-col items-start">
-          <div class="flex items-center gap-3 mb-8">
-            <div class="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-200">
-              <Laptop class="text-white" :size="20" />
-            </div>
-            <span class="text-2xl font-black italic tracking-tighter uppercase text-slate-950">
-              eduFix<span class="text-blue-600 not-italic">.</span>
-            </span>
-          </div>
+<AppLogo size="lg" />
           <p class="text-base text-slate-500 font-medium leading-relaxed max-w-sm mb-8">
             Partner terpercaya mahasiswa untuk urusan kesehatan laptop. Jujur, cepat, dan bergaransi.
           </p>
