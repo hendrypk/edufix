@@ -1,49 +1,39 @@
 <script setup>
-import { MessageCircle, Zap, ShieldCheck, Clock } from 'lucide-vue-next'
-
-const perks = [
-  { text: 'Konsul Gratis', icon: Zap },
-  { text: 'Garansi 30 Hari', icon: ShieldCheck },
-  { text: 'Fast Response', icon: Clock }
-]
+import { MessageCircle, ArrowRight, Sparkles } from 'lucide-vue-next'
 </script>
 
 <template>
-  <section id="kontak" class="py-16 px-5 bg-white">
-    <div class="max-w-7xl mx-auto bg-slate-950 rounded-[3rem] p-8 md:p-20 relative overflow-hidden shadow-2xl shadow-blue-900/20">
-      
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/20 blur-[100px] pointer-events-none"></div>
-      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-600/10 blur-[100px] pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10 text-left">
+  <section id="kontak" class="py-16 md:py-24 px-6 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center md:items-end justify-between gap-10">
         
-        <div>
-          <h2 class="text-3xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-6">
-            Udah Siap <br/> <span class="text-blue-500">Nugas Lagi?</span>
-          </h2>
-          <p class="text-sm md:text-lg text-slate-400 mb-10 leading-relaxed font-medium">
-            Jangan biarin laptop bermasalah ngehambat masa depanmu. Chat eduFix sekarang, kita diagnosis gratis sampe ketemu penyakitnya.
-          </p>
-          
-          <div class="flex flex-wrap gap-4">
-            <div v-for="p in perks" :key="p.text" class="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
-              <component :is="p.icon" class="text-blue-500" :size="14" />
-              <span class="text-[10px] font-bold text-slate-300 uppercase tracking-widest">{{ p.text }}</span>
-            </div>
+        <div class="text-left border-l-4 border-blue-600 pl-6 md:pl-8">
+          <div class="flex items-center gap-2 mb-4 text-blue-600">
+            <Sparkles :size="16" />
+            <span class="text-[10px] font-black uppercase tracking-[0.3em]">Solusi Terakhir</span>
           </div>
+          
+          <h2 class="text-4xl md:text-6xl font-black text-slate-950 tracking-tighter uppercase italic leading-[0.9] mb-6">
+            Laptop Beres, <br />
+            <span class="text-blue-600">Tugas Sukses.</span>
+          </h2>
+          
+          <p class="text-sm md:text-base text-slate-500 font-medium max-w-sm leading-relaxed">
+            Nggak perlu nunggu besok. Chat kita sekarang, konsul gratis, dan laptopmu siap tempur lagi buat ngerjain deadline.
+          </p>
         </div>
 
-        <div class="flex flex-col items-center lg:items-end justify-center">
-          <div class="w-full lg:max-w-xs space-y-4">
-            <a href="https://wa.me/..." 
-               class="flex items-center justify-center gap-3 w-full py-5 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 hover:scale-[1.02] transition-all shadow-xl shadow-blue-600/30 text-lg uppercase italic tracking-tighter">
-              <MessageCircle :size="24" />
-              Tanya Teknisi
-            </a>
-            <p class="text-[10px] text-slate-500 text-center font-bold uppercase tracking-[0.2em]">
-              Biasanya dibalas dalam <span class="text-slate-300">5 menit</span>
-            </p>
-          </div>
+        <div class="w-full md:w-auto shrink-0">
+          <a href="https://wa.me/6287736763720" 
+             class="group flex items-center justify-center gap-4 px-10 py-5 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 uppercase italic tracking-tighter text-lg">
+            <MessageCircle :size="24" />
+            <span>Chat WhatsApp</span>
+            <ArrowRight :size="18" class="group-hover:translate-x-1 transition-transform" />
+          </a>
+          
+          <p class="mt-4 text-[10px] text-slate-400 font-bold uppercase tracking-widest text-center md:text-right">
+            Nggak pake antre, <span class="text-blue-600">respon kilat!</span>
+          </p>
         </div>
 
       </div>

@@ -21,7 +21,7 @@ import { ChevronRight, Coffee, Star } from 'lucide-vue-next'
             </p>
             
             <div class="flex flex-wrap gap-4">
-            <a href="#kontak" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition shadow-xl shadow-blue-100 flex items-center gap-2 text-sm uppercase italic">
+            <a href="https://wa.me/6287736763720" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition shadow-xl shadow-blue-100 flex items-center gap-2 text-sm uppercase italic">
                 Chat Teknisi Sekarang <MessageCircle :size="18" />
             </a>
             <a href="#layanan" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 font-bold rounded-2xl hover:bg-slate-50 transition text-sm uppercase tracking-widest">
